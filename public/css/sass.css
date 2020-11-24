@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  display: grid;
+  grid-template-areas: "header header header header header header" ". main main main main ." "footer footer footer footer footer footer";
+}
+
+header {
+  grid-area: header;
+  height: 100px;
+  padding: 20px;
+  background-color: #F7CE40;
+  box-shadow: 11px 20px 46px -22px rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: flex-end;
+}
+header nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+header ul li {
+  display: inline-block;
+}
+header ul li a {
+  padding: 20px;
+  margin-left: 16px;
+  color: #0B1612;
+  font-size: 1.2em;
+}
+header ul li a:hover {
+  color: white;
+}
+
+main {
+  grid-area: main;
+  margin: 10px 0 150px 0;
+}
+main div {
+  margin-left: 40px;
+}
+main div div {
+  border-bottom: 1px solid black;
+  margin: 16px;
+  width: 100%;
+  padding: 50px 0px 0px 30px;
+}
+main div div h3 {
+  font-size: 1.6em;
+}
+main div div p {
+  margin: 12px 0px 25px 0px;
+  font-size: 1.3em;
+}
+main div a {
+  margin-bottom: 25px;
+  color: #0B1612;
+}
+main form {
+  width: 50%;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 40px;
+  margin: 80px auto 100px auto;
+}
+main form input {
+  width: 100%;
+  margin: 10px 0 20px 0;
+  padding: 16px;
+  border-radius: 6px;
+}
+main form .body {
+  height: 200px;
+}
+main form .submit {
+  background-color: #0B1612;
+  color: white;
+  font-size: 1.5em;
+}
+
+footer {
+  grid-area: footer;
+  display: flex;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+  background-color: #0B1612;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/*# sourceMappingURL=sass.css.map */

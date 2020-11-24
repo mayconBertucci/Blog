@@ -1,0 +1,118 @@
+$colorPrimario: #F7CE40;
+$colorSecondario: #0B1612;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    display: grid;
+    grid-template-areas: 
+    "header header header header header header"
+    ". main main main main ."
+    "footer footer footer footer footer footer";
+}
+
+header {
+    grid-area: header;
+    height: 100px;
+    padding: 20px;
+    background-color: $colorPrimario;
+    box-shadow: 11px 20px 46px -22px rgba(0,0,0,0.75);
+    display: flex;
+    align-items: flex-end;
+
+    nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    ul li {
+        display: inline-block;
+        
+        a {
+            padding: 20px;
+            margin-left: 16px;
+            color: $colorSecondario;
+            font-size: 1.2em;
+        }
+
+        a:hover {
+            color: white;
+        }
+    }
+}
+
+
+main {
+    grid-area: main;
+    margin: 10px 0 150px 0;
+
+    div {
+        margin-left: 40px;
+
+        div {
+            border-bottom: 1px solid black;
+            margin: 16px;
+            width: 100%;
+            padding: 50px 0px 0px 30px;
+            
+            h3 {
+                font-size: 1.6em;
+            }
+    
+            p {
+                margin: 12px 0px 25px 0px;
+                font-size: 1.3em;
+            }
+        }
+
+        a {
+            margin-bottom: 25px;
+            color: $colorSecondario;
+        }
+    }
+
+    form {
+        width: 50%;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        padding: 40px;
+        margin: 80px auto 100px auto;
+
+        input {
+            width: 100%;
+            margin: 10px 0 20px 0;
+            padding: 16px;
+            border-radius: 6px;
+        }
+
+        .body {
+            height: 200px;
+        }
+
+        .submit {
+            background-color: $colorSecondario;
+            color: white;
+            font-size: 1.5em;
+        }
+    }
+}
+
+footer {
+    grid-area: footer;
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    background-color: $colorSecondario;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

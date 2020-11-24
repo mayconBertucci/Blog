@@ -1,0 +1,10 @@
+<%- include('./partials/head.ejs') %>
+
+<form action="/api/snippets" method="POST">
+    <input type="text" name="title" placeholder="Título" required>
+    <input type="text" name="snippet" placeholder="Snippet" required>
+    <input type="text" class="body" name="body" placeholder="Cuerpo" required>
+    <input type="submit" class="submit" value="Enviar">
+</form>
+
+<%- include('./partials/footer.ejs') %> 

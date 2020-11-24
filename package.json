@@ -1,0 +1,21 @@
+{
+  "name": "blog-express",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "sass":"sass --watch src/:public/css/"
+  },
+  "author": "Maycon Bertucci",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.10.15",
+    "validator": "^13.1.17"
+  },
+  "devDependencies": {
+    "sass": "^1.29.0"
+  }
+}
