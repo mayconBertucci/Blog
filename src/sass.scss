@@ -51,24 +51,27 @@ header {
 
 main {
     grid-area: main;
-    margin: 10px 0 150px 0;
+    margin-bottom: 150px;
 
     div {
-        margin-left: 40px;
+        margin: auto;
+        width: 95%;
 
         div {
             border-bottom: 1px solid black;
             margin: 16px;
             width: 100%;
-            padding: 50px 0px 0px 30px;
+            padding: 80px;
             
             h3 {
                 font-size: 1.6em;
             }
     
             p {
-                margin: 12px 0px 25px 0px;
-                font-size: 1.3em;
+                font-size: 1.4em;
+                text-indent: 20px;
+                text-justify: justify;
+                line-height: 35px;
             }
         }
 
